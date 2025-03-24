@@ -15,8 +15,11 @@ html, body {
     overflow: hidden;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 body {
     background: linear-gradient(135deg, var(--dark), #2D0C57);
+    font-family: 'Greet Vibes', cursive ;
     padding: 20px;
 }
 
