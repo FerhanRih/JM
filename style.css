@@ -17,8 +17,6 @@ html, body {
 
 body {
     background: linear-gradient(135deg, var(--dark), #2D0C57);
-   
-    font-family: 'Great Vibes', cursive ;
     padding: 20px;
 }
 
