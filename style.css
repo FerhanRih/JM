@@ -1,0 +1,99 @@
+:root {
+    --gold: #FFD700;
+    --dark: #1A1F29;
+    --accent: #8B4513;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(135deg, var(--dark), #2D0C57);
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Alex Brush', cursive ;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--gold);
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.title {
+    color: var(--gold);
+    font-size: 6vw;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.scroll-container {
+    flex: 1;
+    overflow-y: auto;
+    margin: 10px 0;
+    padding: 10px;
+    max-height: 60vh;
+}
+
+.message-content {
+    color: var(--gold);
+    font-size: 4vw;
+    line-height: 1.6;
+}
+
+.message {
+    margin-bottom: 1rem;
+}
+
+.heart-button {
+    font-size: 8vw;
+    color: var(--accent);
+    cursor: pointer;
+    animation: heartbeat 2s infinite;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Custom scrollbar */
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 4px;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 480px) {
+    .title { font-size: 8vw; }
+    .message-content { font-size: 5vw; }
+    .heart-button { font-size: 10vw; }
+}
+
+i {
+    color: aliceblue;
+}
